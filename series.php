@@ -41,7 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $postBody = file_get_contents("php://input");
     // lo transformo en array el json--> wn array asociativo de php key=>value
     $data = json_decode($postBody, true);
-    var_dump($data);
     $titulo = $data['titulo'] ;
     $lanzamiento = $data['lanzamiento'];
     $duracion = $data['duracion'];
